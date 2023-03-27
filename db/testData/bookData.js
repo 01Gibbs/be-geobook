@@ -1,5 +1,4 @@
-{
-	"data": [
+const testBooks = [
 		{
 			"title": "Always On My Mind",
 			"author": "Kyle Torp I",
@@ -351,4 +350,5 @@
 			"location_description": "Try to bypass the COM monitor, maybe it will quantify the solid state application!"
 		}
 	]
-}
+
+	module.exports = testBooks;

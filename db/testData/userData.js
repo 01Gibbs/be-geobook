@@ -1,5 +1,4 @@
-{
-	"data": [
+const testUsers = [
 		{
 			"username": "Justen_Langworth",
 			"firebase_id": "aaa93374-6d44-40c2-a90e-7d01d2278b12",
@@ -501,4 +500,5 @@
 			"name": "Freddie Heidenreich"
 		}
 	]
-}
+
+	module.exports = testUsers;
