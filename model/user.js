@@ -5,15 +5,15 @@ const userSchema = new mongoose.Schema({
     required: true,
     type: String,
   },
-  firebase_id:{
-    required:true,
-    type:String,
+  firebase_id: {
+    required: true,
+    type: String,
   },
   name: {
     required: true,
     type: String,
   },
-  claimed_books:{
+  claimed_books: {
     required: false,
     type: Array,
   },

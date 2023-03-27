@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 
 const GeoSchema = new mongoose.Schema({
-  type:{
-    type:String,
-    default:'Point'
+  type: {
+    type: String,
+    default: "Point",
   },
-  coordinates:{
-    type:[Number],
-    index:'2dsphere'
-  }
-})
+  coordinates: {
+    type: [Number],
+    index: "2dsphere",
+  },
+});
 // location :{"type":"point", "coordinates":[-80.23, 24.87]}
 const bookSchema = new mongoose.Schema({
   title: {
@@ -26,12 +26,12 @@ const bookSchema = new mongoose.Schema({
   },
   posted_by: {
     required: true,
-    type: Number,
+    type: String,
   },
-  location:GeoSchema,
+  location: GeoSchema,
   location_description: {
     required: true,
     type: String,
-  }
+  },
 });
 module.exports = mongoose.model("Data", bookSchema);
