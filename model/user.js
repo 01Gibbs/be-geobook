@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const userSchema = new mongoose.Schema({
   username: {
     required: true,
@@ -13,7 +14,7 @@ const userSchema = new mongoose.Schema({
     type: String,
   },
   claimed_books:{
-    required: true,
+    required: false,
     type: Array,
   },
 });

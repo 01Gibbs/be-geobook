@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const GeoSchema = new mongoose.Schema({
   type:{
     type:String,
