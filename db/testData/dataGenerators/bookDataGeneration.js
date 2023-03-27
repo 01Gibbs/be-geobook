@@ -13,10 +13,11 @@ function generateBooks() {
     let location = {
       type: "Point",
       coordinates: [
-        faker.address.latitude(53.850197, 53.766673),
         faker.address.longitude(-1.454922, -1.62933),
+        faker.address.latitude(53.850197, 53.766673),
       ],
-    };
+    }
+    let location_description = faker.hacker.phrase();
 
     books.push({
       title: title,
@@ -24,6 +25,7 @@ function generateBooks() {
       genre: genre,
       posted_by: username,
       location: location,
+      location_description: location_description
     });
   }
 
