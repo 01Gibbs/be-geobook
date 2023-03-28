@@ -888,4 +888,4 @@ const googleBookLocalData = [
   },
 ];
 
-module.exports = googleBookLocalData;
+export default googleBookLocalData;

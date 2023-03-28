@@ -197,4 +197,4 @@ const locationData = [
   },
 ];
 
-module.export = locationData;
+export default locationData;
