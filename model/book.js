@@ -28,6 +28,10 @@ const bookSchema = new mongoose.Schema({
     required: true,
     type: String,
   },
+  // created_at: {
+  //   required: true,
+  //   type: Date,
+  // },
   location: GeoSchema,
   location_description: {
     required: true,
