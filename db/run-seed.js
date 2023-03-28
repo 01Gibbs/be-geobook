@@ -1,8 +1,9 @@
-require("dotenv").config({
-    path: `${__dirname}/.env`
+import dotenv from 'dotenv'
+dotenv.config({
+    path: `.env`
   })
-const seedDB = require('./seeds.js')
-const mongoose = require('mongoose')
+import seedDB from './seeds.js'
+import mongoose from 'mongoose'
 
 
 const runSeed = async () => {

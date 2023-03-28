@@ -300,5 +300,4 @@ const bookData = [
       "Try to bypass the COM monitor, maybe it will quantify the solid state application!",
   },
 ];
-
-module.exports = bookData;
+export default bookData;

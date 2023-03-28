@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { faker } from '@faker-js/faker'
-import fs from 'fs/promises'
 
 const fetchClaimedBooks = () => {
   const claimedBooks = []
@@ -35,8 +34,12 @@ const fetchClaimedBooks = () => {
 
       }
 
-      return fs.writeFile(`${__dirname}/../userData.json`, JSON.stringify({data:users}, null, "\t")).then(()=>console.log("finished!"))
+      return users
     })
 }
 
-fetchClaimedBooks()
+export default await fetchClaimedBooks()
+
+
+
+

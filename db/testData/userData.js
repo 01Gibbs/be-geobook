@@ -500,5 +500,4 @@ const userData = [
     name: "Freddie Heidenreich",
   },
 ];
-
-module.exports = userData;
+export default userData;
