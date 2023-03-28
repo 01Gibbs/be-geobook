@@ -35,7 +35,7 @@ const fetchClaimedBooks = () => {
 
       }
 
-      return fs.writeFile("userData.json", JSON.stringify({data:users}, null, "\t")).then(()=>console.log("finished!"))
+      return fs.writeFile(`${__dirname}/../userData.json`, JSON.stringify({data:users}, null, "\t")).then(()=>console.log("finished!"))
     })
 }
 

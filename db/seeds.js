@@ -2,10 +2,14 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const bookData = require("./testData/bookData");
 const booksModel = require("../model/book");
-const userData = require("./testData/userData");
+const userData = require("./testData/userData.js");
 const userModel = require("../model/user");
+// const userJSONData = require("./testData/userData.json")
 
 const mongoString = process.env.DATABASE_URL;
+
+// const userDataParsed = JSON.parse(userJSONData).data
+// console.log(userDataParsed)
 
 mongoose
   .connect(mongoString)
