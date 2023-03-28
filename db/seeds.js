@@ -1,9 +1,14 @@
-require("dotenv").config();
-const mongoose = require("mongoose");
-const bookData = require("./testData/bookData");
-const booksModel = require("../model/book");
-const userData = require("./testData/userData.js");
-const userModel = require("../model/user");
+// require("dotenv").config();
+import dotenv from "dotenv";
+dotenv.config({ silent: process.env.NODE_ENV === 'production' });
+// import dotenv.config
+import {} from 'mongoose'
+import bookData from './testData/bookData.js'
+import bookModel from '../model/book'
+import userModel from '../model/user'
+import userJSONData from './testData/userData.json'
+// const bookData = require("./testData/bookData");
+// const userData = require("./testData/userData.js");
 // const userJSONData = require("./testData/userData.json")
 
 const mongoString = process.env.DATABASE_URL;
