@@ -1,8 +1,8 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
-const testBooks = require("./testData/bookData");
+const bookData = require("./testData/bookData");
 const booksModel = require("../model/book");
-const testUsers = require("./testData/userData");
+const userData = require("./testData/userData");
 const userModel = require("../model/user");
 
 const mongoString = process.env.DATABASE_URL;
@@ -16,9 +16,9 @@ mongoose
 
 const seedDB = async () => {
   await booksModel.collection.drop({});
-  await booksModel.insertMany(testBooks);
+  await booksModel.insertMany(bookData);
   await userModel.collection.drop({});
-  await userModel.insertMany(testUsers);
+  await userModel.insertMany(userData);
 };
 
 module.exports = seedDB;

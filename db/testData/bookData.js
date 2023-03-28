@@ -1,4 +1,4 @@
-const testBooks = [
+const bookData = [
   {
     title: "Always On My Mind",
     author: "Kyle Torp I",
@@ -301,4 +301,4 @@ const testBooks = [
   },
 ];
 
-module.exports = testBooks;
+module.exports = bookData;

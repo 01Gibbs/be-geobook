@@ -1,4 +1,4 @@
-const testUsers = [
+const userData = [
   {
     username: "Justen_Langworth",
     firebase_id: "aaa93374-6d44-40c2-a90e-7d01d2278b12",
@@ -501,4 +501,4 @@ const testUsers = [
   },
 ];
 
-module.exports = testUsers;
+module.exports = userData;
