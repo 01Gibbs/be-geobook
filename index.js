@@ -8,9 +8,9 @@ const app = express();
 
 mongoose.connect(mongoString);
 app.use(express.json());
-const routes = require('./routes/routes.js');
+const routes = require("./routes/routes.js");
 
-app.use('/api', routes)
+app.use("/api", routes);
 
 app.listen(3001, () => {
   console.log(`Server Started at ${3001}`);
