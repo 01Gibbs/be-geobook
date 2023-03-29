@@ -1,6 +1,11 @@
-require("dotenv").config();
-const express = require("express");
-const mongoose = require("mongoose");
+import dotenv from 'dotenv'
+import express from "express"
+import mongoose from 'mongoose'
+import routes from "./routes/routes.js"
+
+dotenv.config({
+  path: `.env`
+})
 
 const mongoString = process.env.DATABASE_URL;
 const database = mongoose.connection;
@@ -8,7 +13,7 @@ const app = express();
 
 mongoose.connect(mongoString);
 app.use(express.json());
-const routes = require("./routes/routes.js");
+
 
 app.use("/api", routes);
 

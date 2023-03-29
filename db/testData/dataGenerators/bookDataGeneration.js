@@ -1,5 +1,4 @@
 import { faker } from "@faker-js/faker";
-import fs from "fs";
 
 function generateBooks() {
   let books = [];
@@ -29,11 +28,7 @@ function generateBooks() {
     });
   }
 
-  return { data: books };
+  return books;
 }
 
-let dataObj = generateBooks();
-
-//to use, add "type": "module" to package.json
-//remember to remove!
-fs.writeFileSync("bookData.json", JSON.stringify(dataObj, null, "\t"));
+export default generateBooks();

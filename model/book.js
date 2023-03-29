@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose"
 
 const GeoSchema = new mongoose.Schema({
   type: {
@@ -38,4 +38,5 @@ const bookSchema = new mongoose.Schema({
     type: String,
   },
 });
-export const booksModel = mongoose.model("booksModel", bookSchema);
+
+export default mongoose.model("booksModel", bookSchema);
