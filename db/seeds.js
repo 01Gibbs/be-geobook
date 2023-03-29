@@ -1,13 +1,13 @@
 import bookData from './testData/dataGenerators/bookDataGeneration.js'
-import booksModel from '../model/book.js'
-import userModel from '../model/user.js'
-import userData from "./testData/dataGenerators/userDataGeneration.js"
+import books from '../model/book.js'
+import users from '../model/user.js'
+import userData from "./testData/userData.js"
 
 const seedDB = async () => {
-  await booksModel.collection.drop({});
-  await booksModel.insertMany(bookData);
-  await userModel.collection.drop({});
-  await userModel.insertMany(userData);
+  await books.collection.drop({});
+  await books.insertMany(bookData);
+  await users.collection.drop({});
+  await users.insertMany(userData);
 };
 
 export default seedDB;

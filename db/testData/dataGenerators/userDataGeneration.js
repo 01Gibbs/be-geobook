@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { faker } from '@faker-js/faker'
+import fs from 'fs/promises'
 
 const fetchClaimedBooks = () => {
   const claimedBooks = []
@@ -33,8 +34,7 @@ const fetchClaimedBooks = () => {
         })
 
       }
-
-      return users
+      fs.writeFile('userData.json', JSON.stringify(users))
     })
 }
 
