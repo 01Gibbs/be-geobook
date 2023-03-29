@@ -1,7 +1,3 @@
-// export const handle404s = (request, response, next) => {
-//   response.status(404).send({ msg: "not found" });
-// };
-
 export const handleCustomError = (error, request, response, next) => {
   if (error.status && error.msg) {
     return response.status(error.status).send({ msg: error.msg });
@@ -18,10 +14,14 @@ export const handle500s = (error, request, response) => {
 };
 
 export const handleMongooseErrors = (error, request, response, next) => {
-
-  if(error.errors.name.properties.type === 'required') {
-    const path = error.errors.name.properties.path
-    return response.status(400).send({ msg: `${path} is a required field` });
+  if(error.errors) {
+    const kind = error.errors[Object.keys(error.errors)[0]].kind
+    const path = error.errors[Object.keys(error.errors)[0]].path
+    if (kind === 'required') {
+      return response.status(400).send({ msg: `${path} is a required field` });
+    } else if (kind === 'string') {
+      return response.status(400).send({ msg: `${path} field should be a ${kind}` });
+    } 
   } else {
     next(error)
   }

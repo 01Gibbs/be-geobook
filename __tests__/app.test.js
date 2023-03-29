@@ -112,6 +112,20 @@ describe("userModels", () => {
           expect(msg).toBe("name is a required field")
         })
     })
+    test("POST: 400 ignores extra keys", () => {
+      return request(app)
+        .post("/api/users")
+        .send({
+          username: ["TestUser1"],
+          firebase_id: "12eef1f2-d9ec-4aab-88b9-68528940ca0",
+          name: "Test User Has Name",
+          claimed_books: ['book1', 'book2']
+        })
+        .expect(400)
+        .then(({body: {msg}}) => {
+          expect(msg).toBe("username field should be a string")
+        })
+    });
   });
 });
 
