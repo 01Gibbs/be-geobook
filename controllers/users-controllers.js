@@ -10,13 +10,17 @@ export const getUsers = async (req, res) => {
   }
 };
 
-export const getUser = async (req, res) => {
+export const getUser = async (req, res, next) => {
   try {
     const userData = await userModel
       .findOne({ username: req.params.username })
       .setOptions({ sanitizeFilter: true });
-    return res.status(200).send({ user: userData });
+    if (!userData) {
+      await Promise.reject({ status: 404, msg: "User Not Found" });
+    } else {
+      return res.status(200).send({ user: userData });
+    }
   } catch (error) {
-    return res.status(500).json({ message: error.message });
+    next(error);
   }
 };
