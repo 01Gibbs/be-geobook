@@ -3,6 +3,7 @@ import request from 'supertest'
 import app from '../index.js'
 import seedDB from '../db/seeds.js'
 import dotenv from 'dotenv'
+
 dotenv.config({path:'.env.test'})
 
 
@@ -26,7 +27,12 @@ describe('userModels', () => {
             .get('/api/users')
             .expect(200)
             .then(({body:{users}}) => {
-                
+                users.forEach(user => {
+                    expect(user).toHaveProperty('username', expect.any(String))
+                    expect(user).toHaveProperty('firebase_id', expect.any(String))
+                    expect(user).toHaveProperty('name', expect.any(String))
+                    expect(user).toHaveProperty('claimed_books', expect.any(Array))
+                })
 
             })
         })

@@ -1,7 +1,7 @@
 import bookData from './testData/dataGenerators/bookDataGeneration.js'
 import books from '../model/book.js'
 import users from '../model/user.js'
-import userData from "./testData/dataGenerators/userDataGeneration.js"
+import userData from "./testData/userData.js"
 
 const seedDB = async () => {
   await books.collection.drop({});
