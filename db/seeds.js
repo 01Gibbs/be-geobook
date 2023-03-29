@@ -1,4 +1,4 @@
-import bookData from './testData/bookData.js'
+import bookData from './testData/dataGenerators/bookDataGeneration.js'
 import booksModel from '../model/book.js'
 import userModel from '../model/user.js'
 import userData from "./testData/dataGenerators/userDataGeneration.js"
