@@ -1,12 +1,11 @@
 import userModel from "../model/user.js";
-import { sanitizeFilter } from "mongoose";
 
 export const getUsers = async (req, res) => {
   try {
     const userData = await userModel.find();
     return res.status(200).send({ users: userData });
   } catch (error) {
-    return res.status(500).json({ message: error.message });
+    next(error);
   }
 };
 
@@ -20,6 +19,20 @@ export const getUser = async (req, res, next) => {
     } else {
       return res.status(200).send({ user: userData });
     }
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const postUser = async (req, res, next) => {
+  try {
+    const newUser = new userModel({
+      username: req.body.username,
+      firebase_id: req.body.firebase_id,
+      name: req.body.name,
+    });
+    const dataToSave = await newUser.save();
+    return res.status(201).send({ user: dataToSave });
   } catch (error) {
     next(error);
   }

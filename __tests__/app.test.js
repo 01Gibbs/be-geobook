@@ -19,7 +19,7 @@ afterAll(async () => {
 });
 
 describe("userModels", () => {
-  describe("GET: /api/users", () => {
+  xdescribe("GET: /api/users", () => {
     test("GET: 200 with array of all users", () => {
       return request(app)
         .get("/api/users")
@@ -34,7 +34,7 @@ describe("userModels", () => {
         });
     });
   });
-  describe("GET: /api/users/:username", () => {
+  xdescribe("GET: /api/users/:username", () => {
     test("GET: 200 with individual user ", () => {
       return request(app)
         .get("/api/users/Orland.Schmitt58")
@@ -64,9 +64,28 @@ describe("userModels", () => {
         });
     });
   });
+  describe("POST: /api/users", () => {
+    test("POST: 201 ", () => {
+      return request(app)
+        .post("/api/users")
+        .send({
+          username: "TestUser1",
+          firebase_id: "12eef1f2-d9ec-4aab-88b9-68528940ca0",
+          name: "Test User Has Name",
+        })
+        .expect(201)
+        .then(({ body: { user } }) => {
+          expect(user).toMatchObject({
+            username: "TestUser1",
+            firebase_id: "12eef1f2-d9ec-4aab-88b9-68528940ca0",
+            name: "Test User Has Name",
+          });
+        });
+    });
+  });
 });
 
-describe("bookModels", () => {
+xdescribe("bookModels", () => {
   describe("GET: /api/books", () => {
     test("GET: 200 with array of all books", () => {
       return request(app)

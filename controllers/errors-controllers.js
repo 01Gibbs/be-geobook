@@ -11,6 +11,7 @@ export const handleCustomError = (error, request, response, next) => {
 };
 
 export const handle500s = (error, request, response) => {
+  console.log(error);
   return response.status(500).send({
     msg: "Pirates have stolen the map piece! We'll get back to you when we have it back!",
   });
