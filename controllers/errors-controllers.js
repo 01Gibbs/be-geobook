@@ -16,3 +16,14 @@ export const handle500s = (error, request, response) => {
     msg: "Pirates have stolen the map piece! We'll get back to you when we have it back!",
   });
 };
+
+export const handleMongooseErrors = (error, request, response, next) => {
+
+  if(error.errors.name.properties.type === 'required') {
+    const path = error.errors.name.properties.path
+    return response.status(400).send({ msg: `${path} is a required field` });
+  } else {
+    next(error)
+  }
+
+}

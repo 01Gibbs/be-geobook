@@ -10,16 +10,16 @@ beforeAll(async () => {
   await mongoose.connect(process.env.DATABASE_URL);
 });
 
-// beforeEach(async () => {
-//   await seedDB();
-// });
+beforeEach(async () => {
+  await seedDB();
+});
 
 afterAll(async () => {
   await mongoose.connection.close();
 });
 
 describe("userModels", () => {
-  xdescribe("GET: /api/users", () => {
+  describe("GET: /api/users", () => {
     test("GET: 200 with array of all users", () => {
       return request(app)
         .get("/api/users")
@@ -34,7 +34,7 @@ describe("userModels", () => {
         });
     });
   });
-  xdescribe("GET: /api/users/:username", () => {
+  describe("GET: /api/users/:username", () => {
     test("GET: 200 with individual user ", () => {
       return request(app)
         .get("/api/users/Orland.Schmitt58")
@@ -64,7 +64,7 @@ describe("userModels", () => {
         });
     });
   });
-  describe("POST: /api/users", () => {
+  describe.only("POST: /api/users", () => {
     test("POST: 201 ", () => {
       return request(app)
         .post("/api/users")
@@ -82,10 +82,40 @@ describe("userModels", () => {
           });
         });
     });
+    test("POST: 201 ignores extra keys", () => {
+      return request(app)
+        .post("/api/users")
+        .send({
+          username: "TestUser1",
+          firebase_id: "12eef1f2-d9ec-4aab-88b9-68528940ca0",
+          name: "Test User Has Name",
+          claimed_books: ['book1', 'book2']
+        })
+        .expect(201)
+        .then(({ body: { user } }) => {
+          expect(user).toMatchObject({
+            username: "TestUser1",
+            firebase_id: "12eef1f2-d9ec-4aab-88b9-68528940ca0",
+            name: "Test User Has Name",
+          });
+        });
+    });
+    test("POST: 400 missing key", () => {
+      return request(app)
+        .post("/api/users")
+        .send({
+          username: "TestUser1",
+          firebase_id: "12eef1f2-d9ec-4aab-88b9-68528940ca0",
+        })
+        .expect(400)
+        .then(({body: {msg}}) => {
+          expect(msg).toBe("name is a required field")
+        })
+    })
   });
 });
 
-xdescribe("bookModels", () => {
+describe("bookModels", () => {
   describe("GET: /api/books", () => {
     test("GET: 200 with array of all books", () => {
       return request(app)
