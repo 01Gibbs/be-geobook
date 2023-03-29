@@ -1,9 +1,11 @@
-import server from 'express'
-import { getUsers } from '../controllers/users-controllers'
+import server from "express";
+import { getUser, getUsers } from "../controllers/users-controllers";
 
-const usersRouter = server.Router()
+const usersRouter = server.Router();
 
-usersRouter.get('/', getUsers)
+usersRouter.get("/", getUsers);
 
+//Get by Username Method
+usersRouter.get("/:username", getUser);
 
-export default usersRouter
+export default usersRouter;
