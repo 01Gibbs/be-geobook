@@ -64,7 +64,7 @@ describe("userModels", () => {
         });
     });
   });
-  describe.only("POST: /api/users", () => {
+  describe("POST: /api/users", () => {
     test("POST: 201 ", () => {
       return request(app)
         .post("/api/users")
@@ -155,4 +155,27 @@ describe("bookModels", () => {
         });
     });
   });
+  describe("GET: /api/books/:id", () => {
+    test("200 with one book object", () => {
+      return request(app)
+        .get("/api/books/1")
+        .expect(200)
+        .then(({ body: { book }}) => {
+          expect(book).toHaveProperty("title", expect.any(String));
+          expect(book).toHaveProperty("author", expect.any(String));
+          expect(book).toHaveProperty("genre", expect.any(String));
+          expect(book).toHaveProperty("posted_by", expect.any(String));
+          expect(book).toHaveProperty("location", expect.any(Object));
+          expect(book.location).toHaveProperty("type", expect.any(String));
+          expect(book.location).toHaveProperty(
+              "coordinates",
+              expect.any(Array)
+            );
+          expect(book).toHaveProperty(
+              "location_description",
+              expect.any(String)
+            );
+        })
+    })
+  })
 });

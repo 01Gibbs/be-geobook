@@ -19,6 +19,7 @@ function generateBooks() {
     let location_description = faker.hacker.phrase();
 
     books.push({
+      _id: id,
       title: title,
       author: name,
       genre: genre,

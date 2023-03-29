@@ -12,6 +12,10 @@ const GeoSchema = new mongoose.Schema({
 });
 // location :{"type":"point", "coordinates":[-80.23, 24.87]}
 const bookSchema = new mongoose.Schema({
+  _id: {
+    required: true,
+    type: Number,
+  },
   title: {
     required: true,
     type: String,
