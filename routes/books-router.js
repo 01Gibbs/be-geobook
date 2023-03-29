@@ -3,6 +3,6 @@ import { getBooks } from "../controllers/books-controllers";
 
 const booksRouter = server.Router();
 
-booksRouter.get("/", getBooks);
+booksRouter.route("/").get(getBooks);
 
 export default booksRouter;
