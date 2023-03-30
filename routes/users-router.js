@@ -5,7 +5,7 @@ const usersRouter = server.Router()
 
 usersRouter.route('/').get(getUsers).post(postUser)
 
-//Get by Username Method
-usersRouter.route('/:username').get(getUser)
+//Get by Id Method
+usersRouter.route('/:id').get(getUser)
 
 export default usersRouter

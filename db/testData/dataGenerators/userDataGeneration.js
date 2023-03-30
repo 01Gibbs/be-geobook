@@ -1,6 +1,8 @@
 import axios from 'axios'
 import { faker } from '@faker-js/faker'
+import mongoose from 'mongoose'
 import fs from 'fs/promises'
+
 
 const fetchClaimedBooks = () => {
   const claimedBooks = []
@@ -13,9 +15,9 @@ const fetchClaimedBooks = () => {
       bookData.map(book => {
         return claimedBooks.push({
           title: book.volumeInfo.title,
-          author: book.volumeInfo.authors,
+          author: book.volumeInfo.authors[0],
           genre:
-            book.volumeInfo.categories || genres[Math.floor(Math.random()*4)],
+            genres[Math.floor(Math.random()*4)],
           thumbnail: book.volumeInfo.imageLinks.smallThumbnail
         })
       })
@@ -27,6 +29,7 @@ const fetchClaimedBooks = () => {
         let uid = faker.datatype.uuid()
         let name = faker.name.fullName()
         users.push({
+          _id: new mongoose.Types.ObjectId(),
           username: username,
           firebase_id: uid,
           name: name,
@@ -34,12 +37,11 @@ const fetchClaimedBooks = () => {
         })
 
       }
-      fs.writeFile('userData.json', JSON.stringify(users))
+      return fs.writeFile('userData.json', JSON.stringify(users))
     })
 }
 
-export default await fetchClaimedBooks()
-
+fetchClaimedBooks()
 
 
 
