@@ -2,11 +2,11 @@
   "name": "be-geobook",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "listen.js",
   "type": "module",
   "scripts": {
     "test": "jest",
-    "start": "nodemon index.js",
+    "start": "node listen.js",
     "seed-prod": "node db/run-seed.js"
   },
   "repository": {

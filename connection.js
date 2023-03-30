@@ -1,23 +1,18 @@
-import dotenv from 'dotenv'
+import dotenv from "dotenv";
 dotenv.config({
-    path: `.env`
-  })
-  const mongoString = process.env.DATABASE_URL;
+  path: `.env`,
+});
+const mongoString = process.env.DATABASE_URL;
 
-import mongoose from 'mongoose'
-import app from './index.js'
+import mongoose from "mongoose";
 
 mongoose.connect(mongoString);
 const database = mongoose.connection;
 
-  database.on("error", (error) => {
-    console.log(error);
-  });
-  
-  database.once("connected", () => {
-    console.log("Database Connected");
-  });
-  
-  app.listen(3001, () => {
-    console.log(`Server Started at ${3001}`);
-  });
+database.on("error", (error) => {
+  console.log(error);
+});
+
+database.once("connected", () => {
+  console.log("Database Connected");
+});
