@@ -13,6 +13,7 @@ export const getBook = async (req, res, next) => {
   try {
     const bookData = await bookModels
       .findById(req.params.id);
+    !bookData ? res.status(404).send({msg:'Book not found.'}):null
     return res.status(200).send({ book: bookData })
   } catch (error) {
     next(error);

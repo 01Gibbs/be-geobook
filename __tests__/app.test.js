@@ -177,5 +177,13 @@ describe("bookModels", () => {
             );
         })
     })
+    test("404 non-existent book", () => {
+      return request(app)
+        .get("/api/books/123")
+        .expect(404)
+        .then(({body: {msg}}) => {
+          expect(msg).toBe('Book not found.')
+    })
   })
-});
+})
+})
