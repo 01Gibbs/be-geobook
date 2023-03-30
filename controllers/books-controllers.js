@@ -20,3 +20,20 @@ export const getBook = async (req, res, next) => {
     next(error);
   }
 }
+
+export const postBook = async (req, res, next) => {
+  try {
+    const newBook = new bookModels({
+      title: req.body.title,
+      author: req.body.author,
+      genre: req.body.genre,
+      posted_by: req.body.posted_by,
+      location: req.body.location,
+      location_description: req.body.location_description
+    })
+    const dataToSave = await newBook.save()
+    return res.status(201).send({book: dataToSave})
+  } catch (error) {
+    next(error)
+  }
+}

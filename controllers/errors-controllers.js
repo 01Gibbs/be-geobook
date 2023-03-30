@@ -12,10 +12,12 @@ export const handleMongooseErrors = (error, request, response, next) => {
     const path = error.errors[Object.keys(error.errors)[0]].path;
     if (kind === "required") {
       return response.status(400).send({ msg: `${path} is a required field` });
-    } else if (kind === "string") {
+    } else if (kind === "string" || kind === "[Number]") {
       return response
         .status(400)
         .send({ msg: `${path} field should be a ${kind}` });
+    } else {
+      console.log('mongoose unresolved error', error.errors)
     }
   } else if (error.kind) {
     return response
