@@ -1,6 +1,6 @@
 import server from "express";
-import usersRouter from "./users-router";
-import booksRouter from "./books-router";
+import usersRouter from "./users-router.js";
+import booksRouter from "./books-router.js";
 
 const apiRouter = server.Router();
 

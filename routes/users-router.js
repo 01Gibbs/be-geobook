@@ -1,11 +1,15 @@
-import server from 'express'
-import { getUser, getUsers, postUser } from '../controllers/users-controllers'
+import server from "express";
+import {
+  getUser,
+  getUsers,
+  postUser,
+} from "../controllers/users-controllers.js";
 
-const usersRouter = server.Router()
+const usersRouter = server.Router();
 
-usersRouter.route('/').get(getUsers).post(postUser)
+usersRouter.route("/").get(getUsers).post(postUser);
 
 //Get by Id Method
-usersRouter.route('/:id').get(getUser)
+usersRouter.route("/:id").get(getUser);
 
-export default usersRouter
+export default usersRouter;

@@ -3,8 +3,8 @@ import {
   handle500s,
   handleCustomError,
   handleMongooseErrors,
-} from "./controllers/errors-controllers";
-import apiRouter from "./routes/api-router";
+} from "./controllers/errors-controllers.js";
+import apiRouter from "./routes/api-router.js";
 
 const app = express();
 
