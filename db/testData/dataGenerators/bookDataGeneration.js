@@ -1,4 +1,6 @@
 import { faker } from "@faker-js/faker";
+import mongoose from 'mongoose'
+import fs from 'fs/promises'
 
 function generateBooks() {
   let books = [];
@@ -19,7 +21,7 @@ function generateBooks() {
     let location_description = faker.hacker.phrase();
 
     books.push({
-      _id: id,
+      _id: new mongoose.Types.ObjectId(),
       title: title,
       author: name,
       genre: genre,
@@ -28,8 +30,8 @@ function generateBooks() {
       location_description: location_description,
     });
   }
+  return fs.writeFile('booksData.json', JSON.stringify(books))
 
-  return books;
 }
 
 export default generateBooks();

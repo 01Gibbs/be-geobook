@@ -14,7 +14,8 @@ const GeoSchema = new mongoose.Schema({
 const bookSchema = new mongoose.Schema({
   _id: {
     required: true,
-    type: Number,
+    type: mongoose.Schema.Types.ObjectId,
+    auto: true,
   },
   title: {
     required: true,

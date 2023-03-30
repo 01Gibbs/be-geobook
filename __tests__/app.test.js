@@ -158,7 +158,7 @@ describe("bookModels", () => {
   describe("GET: /api/books/:id", () => {
     test("200 with one book object", () => {
       return request(app)
-        .get("/api/books/1")
+        .get("/api/books/6425407dba5e321df2803b39")
         .expect(200)
         .then(({ body: { book }}) => {
           expect(book).toHaveProperty("title", expect.any(String));
