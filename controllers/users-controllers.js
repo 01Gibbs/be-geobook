@@ -12,7 +12,7 @@ export const getUsers = async (req, res) => {
 export const getUser = async (req, res, next) => {
   try {
     const userData = await userModel
-      .findOne({ username: req.params.username })
+      .findById(req.params.id)
       .setOptions({ sanitizeFilter: true });
     if (!userData) {
       await Promise.reject({ status: 404, msg: "User Not Found" });

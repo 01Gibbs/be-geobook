@@ -1,1727 +1,1556 @@
 const userData = [
   {
-    "_id": "6425433da85be19788f0f48c",
-    "username": "Eric_Ullrich",
-    "firebase_id": "7e6c5650-1553-4295-b0d8-48032d23703a",
-    "name": "Tracy McCullough",
-    "claimed_books": [
-      {
-        "title": "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
-        "author": [
-          "Matthew Pile"
-        ],
-        "genre": [
-          "Bee culture"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f48d",
-    "username": "Lawson_Rodriguez",
-    "firebase_id": "0af97fdd-367d-460a-8f4a-e9ad777a367f",
-    "name": "Darren Collins",
-    "claimed_books": [
-      {
-        "title": "A More Perfect Union",
-        "author": [
-          "Hana Schank"
-        ],
-        "genre": [
-          "Family & Relationships"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f48e",
-    "username": "Christiana.Leffler85",
-    "firebase_id": "67b9d3c9-cfdb-4d0c-bc15-88bda990f177",
-    "name": "Rachael Okuneva",
-    "claimed_books": [
-      {
-        "title": "A Theory of Semiotics",
-        "author": [
-          "Umberto Eco"
-        ],
-        "genre": [
-          "Literary Criticism"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f48f",
-    "username": "Dino_Raynor",
-    "firebase_id": "01787674-e402-4ed4-b6db-ba5643c514f4",
-    "name": "Gene Johnson",
-    "claimed_books": [
-      {
-        "title": "A More Perfect Union",
-        "author": [
-          "Hana Schank"
-        ],
-        "genre": [
-          "Family & Relationships"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f490",
-    "username": "Abby_Zieme",
-    "firebase_id": "7c59035f-fc78-4908-bf1b-65e9da94a1b9",
-    "name": "Jane Bogan",
-    "claimed_books": [
-      {
-        "title": "A Theory of Semiotics",
-        "author": [
-          "Umberto Eco"
-        ],
-        "genre": [
-          "Literary Criticism"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f491",
-    "username": "Addie.Buckridge0",
-    "firebase_id": "4adaf0c8-5c5d-422a-a3b4-e6a41d5d05a4",
-    "name": "Sandy Ondricka",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f492",
-    "username": "Gennaro.Keebler71",
-    "firebase_id": "671e77a3-18e8-451b-b5da-aed3788af865",
-    "name": "Mario Dickinson",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f493",
-    "username": "Marc.Rau",
-    "firebase_id": "ed04346a-d1ee-4685-8c1a-5d290293d8e3",
-    "name": "Jon Fritsch",
-    "claimed_books": [
-      {
-        "title": "A Theory of Semiotics",
-        "author": [
-          "Umberto Eco"
-        ],
-        "genre": [
-          "Literary Criticism"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f494",
-    "username": "Walton_Lowe52",
-    "firebase_id": "5dc5a628-d20c-4dd6-8fff-f3f33da08691",
-    "name": "Beatrice Harber",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f495",
-    "username": "Nya_Considine",
-    "firebase_id": "e7997760-d210-490e-94a0-21531dc12989",
-    "name": "Elias Orn",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f496",
-    "username": "Eugene75",
-    "firebase_id": "2c985fcd-a88a-486c-b11b-d75f07cf2898",
-    "name": "Kristi Brekke",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f497",
-    "username": "Theresia.Wolf88",
-    "firebase_id": "f71ecf13-8465-4b7b-b3f4-4ea9ba0bf4f5",
-    "name": "Juan Kilback DVM",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f498",
-    "username": "Shanelle.Cruickshank92",
-    "firebase_id": "22c6ad9f-ac48-465c-acdd-98cf24af62c8",
-    "name": "Jessie Zulauf",
-    "claimed_books": [
-      {
-        "title": "A More Perfect Union",
-        "author": [
-          "Hana Schank"
-        ],
-        "genre": [
-          "Family & Relationships"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f499",
-    "username": "Darian.Lueilwitz37",
-    "firebase_id": "f0d191cb-1a1b-481b-b4cd-852bb3404475",
-    "name": "Stuart Durgan II",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f49a",
-    "username": "May.Runolfsson85",
-    "firebase_id": "9a415ddf-08bc-4705-9079-c1c14e16f058",
-    "name": "Jimmie Hagenes Sr.",
-    "claimed_books": [
-      {
-        "title": "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
-        "author": [
-          "John SINCLAIR (Right Hon. Sir)"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f49b",
-    "username": "Lauryn.Jenkins",
-    "firebase_id": "2a834941-d05a-4960-abda-2b66ef414a15",
-    "name": "Kara Schiller",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f49c",
-    "username": "Clotilde.Lebsack14",
-    "firebase_id": "85a46034-135c-498d-9f09-07df2c5fc574",
-    "name": "Aaron Bradtke",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f49d",
-    "username": "Ike.Lynch94",
-    "firebase_id": "c947da5d-b06b-4888-be49-a6b726f898f8",
-    "name": "Ben Windler",
-    "claimed_books": [
-      {
-        "title": "A Scintillating Anion Exchange Resin",
-        "author": [
-          "Alvin H. Heimbuch"
-        ],
-        "genre": [
-          "Organic scintillators"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f49e",
-    "username": "Leda_Haley",
-    "firebase_id": "3b5ff140-eb57-47e8-8e8f-6ff28c32d8be",
-    "name": "Miss Pablo Gusikowski",
-    "claimed_books": [
-      {
-        "title": "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
-        "author": [
-          "John SINCLAIR (Right Hon. Sir)"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f49f",
-    "username": "Arvid.Murphy",
-    "firebase_id": "669067a6-2566-4b6b-9f50-3850792a1e8e",
-    "name": "Jenna Medhurst",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4a0",
-    "username": "Randall_Spencer",
-    "firebase_id": "d3d241d8-2c06-4505-92f2-f3db36c32530",
-    "name": "Joan D'Amore",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4a1",
-    "username": "Faustino_Bradtke",
-    "firebase_id": "a905639a-f009-4515-8b9d-8047d179716e",
-    "name": "Kevin Boyer II",
-    "claimed_books": [
-      {
-        "title": "A More Perfect Union",
-        "author": [
-          "Hana Schank"
-        ],
-        "genre": [
-          "Family & Relationships"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4a2",
-    "username": "Rey5",
-    "firebase_id": "850fc700-81a1-4af2-825c-eaa157a3a92c",
-    "name": "Irene Prohaska",
-    "claimed_books": [
-      {
-        "title": "A Theory of Semiotics",
-        "author": [
-          "Umberto Eco"
-        ],
-        "genre": [
-          "Literary Criticism"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4a3",
-    "username": "Sister.Hudson70",
-    "firebase_id": "11e9b3e3-86f9-4919-a9de-c291bde6d829",
-    "name": "Adam Aufderhar",
-    "claimed_books": [
-      {
-        "title": "A Scintillating Anion Exchange Resin",
-        "author": [
-          "Alvin H. Heimbuch"
-        ],
-        "genre": [
-          "Organic scintillators"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4a4",
-    "username": "Ahmed.Keeling36",
-    "firebase_id": "4f3a1d10-0f97-473d-9f67-2a61e7d007ad",
-    "name": "Miss Jean Heathcote",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4a5",
-    "username": "Tierra_Jenkins2",
-    "firebase_id": "cf00bcea-d7bc-4c20-b228-c75c907cf97b",
-    "name": "Orlando Marks",
-    "claimed_books": [
-      {
-        "title": "A Theory of Semiotics",
-        "author": [
-          "Umberto Eco"
-        ],
-        "genre": [
-          "Literary Criticism"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4a6",
-    "username": "Fiona20",
-    "firebase_id": "811bda30-e9d1-4638-bc2f-c26a47a29878",
-    "name": "Isabel Bernier",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4a7",
-    "username": "Ettie74",
-    "firebase_id": "2a723553-b62b-45c3-818d-393b69c8b8bd",
-    "name": "Wade Bruen",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4a8",
-    "username": "Raquel.Strosin",
-    "firebase_id": "6c6e7c2b-b55d-493e-b493-5ff208ed6bc2",
-    "name": "Guadalupe Conroy",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4a9",
-    "username": "Donnie_Stamm",
-    "firebase_id": "49d36969-29bc-4fda-8c68-2a505cc65c3a",
-    "name": "Wendy Purdy",
-    "claimed_books": [
-      {
-        "title": "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
-        "author": [
-          "John SINCLAIR (Right Hon. Sir)"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4aa",
-    "username": "Ressie_Vandervort51",
-    "firebase_id": "be6e1596-d7f6-448a-9d85-3ae079ea3d43",
-    "name": "Jose Bashirian",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ab",
-    "username": "Jevon.Ankunding90",
-    "firebase_id": "1aca878b-2b92-49cf-94e0-c08de87a6fc5",
-    "name": "Miss Katrina Schimmel",
-    "claimed_books": [
-      {
-        "title": "A Theory of Semiotics",
-        "author": [
-          "Umberto Eco"
-        ],
-        "genre": [
-          "Literary Criticism"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ac",
-    "username": "Agnes.Abbott17",
-    "firebase_id": "3e0aa209-e0e3-43fd-84cb-c47c578732be",
-    "name": "Lance Franecki",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ad",
-    "username": "Rogelio.Abshire55",
-    "firebase_id": "64951d0f-06be-4a7a-8ee9-1f074cfb3278",
-    "name": "Joey Cronin DDS",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ae",
-    "username": "Derrick.Kunze90",
-    "firebase_id": "fafba9bb-1a4b-4de6-b964-f712083b9a03",
-    "name": "Cody Hane",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4af",
-    "username": "Vella_MacGyver",
-    "firebase_id": "94829fbb-47fd-4b36-b2cc-a56814359d1c",
-    "name": "Tricia Feil",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4b0",
-    "username": "Courtney20",
-    "firebase_id": "2c0e9196-54ce-4309-ab53-ff50d91f41c0",
-    "name": "Sylvia Williamson",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4b1",
-    "username": "Cleta27",
-    "firebase_id": "3abc8346-069c-4fb4-8390-5e56c3e0a225",
-    "name": "Frances Crooks",
-    "claimed_books": [
-      {
-        "title": "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
-        "author": [
-          "Matthew Pile"
-        ],
-        "genre": [
-          "Bee culture"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4b2",
-    "username": "Cathrine_McLaughlin78",
-    "firebase_id": "98ebb146-3305-4127-9adb-2210619267d4",
-    "name": "Margie Nitzsche",
-    "claimed_books": [
-      {
-        "title": "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
-        "author": [
-          "John SINCLAIR (Right Hon. Sir)"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4b3",
-    "username": "Jermaine21",
-    "firebase_id": "a9565f44-b5ed-49d2-aeb2-cd0e2278ed7a",
-    "name": "Kristin Emard DDS",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4b4",
-    "username": "Alicia_King",
-    "firebase_id": "e07f4d31-2ee5-4b04-8dc2-895c9b19e4e9",
-    "name": "Tara Cummerata",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4b5",
-    "username": "Mayra_Roob",
-    "firebase_id": "87377883-f8b2-4a14-b520-115b1132c391",
-    "name": "Tammy Heidenreich",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4b6",
-    "username": "Ewald0",
-    "firebase_id": "cd530dca-700f-4430-9c6b-04ccd3041d31",
-    "name": "Sammy Hodkiewicz",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4b7",
-    "username": "Jabari.Barton",
-    "firebase_id": "ed7879b1-c2c0-4496-a227-8ccd206566d2",
-    "name": "Hazel Schmeler",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4b8",
-    "username": "Kendra7",
-    "firebase_id": "75cf961d-ce3b-418c-a486-c5f77f434c73",
-    "name": "Miss Jennie Ondricka",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4b9",
-    "username": "Kobe.Miller",
-    "firebase_id": "2f3ae036-7d3d-436c-8515-b609503968de",
-    "name": "Rogelio Turner",
-    "claimed_books": [
-      {
-        "title": "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
-        "author": [
-          "Matthew Pile"
-        ],
-        "genre": [
-          "Bee culture"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ba",
-    "username": "Damaris.Breitenberg",
-    "firebase_id": "1cfd9974-88ae-4cfb-a5f1-5da1429be703",
-    "name": "Virginia Greenholt",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4bb",
-    "username": "Evangeline_Maggio13",
-    "firebase_id": "362999b3-a169-46e4-aadd-c7bb1e73cd6e",
-    "name": "Rebecca Jacobs",
-    "claimed_books": [
-      {
-        "title": "A More Perfect Union",
-        "author": [
-          "Hana Schank"
-        ],
-        "genre": [
-          "Family & Relationships"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4bc",
-    "username": "Afton72",
-    "firebase_id": "80299fa3-b304-4a0c-b5bd-3423454cf897",
-    "name": "Caroline Marks",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4bd",
-    "username": "Karelle.Muller72",
-    "firebase_id": "7f33151b-dd15-4952-9ca9-3f69ed3c7c5d",
-    "name": "Belinda Goldner",
-    "claimed_books": [
-      {
-        "title": "A More Perfect Union",
-        "author": [
-          "Hana Schank"
-        ],
-        "genre": [
-          "Family & Relationships"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4be",
-    "username": "Edmund80",
-    "firebase_id": "48cd3fae-ba88-4f0f-94bf-e3de2e13bfb7",
-    "name": "Martin Medhurst",
-    "claimed_books": [
-      {
-        "title": "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
-        "author": [
-          "John SINCLAIR (Right Hon. Sir)"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4bf",
-    "username": "Anastacio.Kohler30",
-    "firebase_id": "665fef4b-5ad9-46a9-b29b-848d80292c4c",
-    "name": "Edwin Ward",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4c0",
-    "username": "Juston_Kuphal74",
-    "firebase_id": "55032a87-031b-40b7-ad14-2a51495f93f7",
-    "name": "Devin Rolfson",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4c1",
-    "username": "Lorena.Kerluke72",
-    "firebase_id": "e4ed7404-6221-42ae-bf48-d47c78c8fd96",
-    "name": "Claude Lind",
-    "claimed_books": [
-      {
-        "title": "A Scintillating Anion Exchange Resin",
-        "author": [
-          "Alvin H. Heimbuch"
-        ],
-        "genre": [
-          "Organic scintillators"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4c2",
-    "username": "Tyrique93",
-    "firebase_id": "f75a2d14-489c-47e1-8a36-8b2ff6879a5e",
-    "name": "Jeanette Dietrich",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4c3",
-    "username": "Sylvia_Maggio7",
-    "firebase_id": "115c2f44-585e-4c2d-b3e0-55bd175a2a01",
-    "name": "Mrs. Marshall Ondricka",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4c4",
-    "username": "Frances.Lang",
-    "firebase_id": "4f69c921-38ec-4e67-96e3-fb6d0ea87ab6",
-    "name": "Lucas Rosenbaum",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4c5",
-    "username": "Keely.Lang46",
-    "firebase_id": "f7460fed-a17f-482b-a267-7eea77ef85ee",
-    "name": "Johnathan Bradtke",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4c6",
-    "username": "Bella.Yost68",
-    "firebase_id": "091745d8-69cd-4a44-ac39-623d8b4975da",
-    "name": "Sonya Kshlerin",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4c7",
-    "username": "Royce.Treutel",
-    "firebase_id": "a4a3f931-d0a4-47b2-b420-1c9c82e5893f",
-    "name": "Dr. Gabriel Bartell",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4c8",
-    "username": "Josephine58",
-    "firebase_id": "345245fb-924d-490d-a3cc-01061b58a089",
-    "name": "Mr. Olga Fadel",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4c9",
-    "username": "Mary.Lemke85",
-    "firebase_id": "d2908990-763d-4832-9924-2bfde1c28bef",
-    "name": "Warren Shields",
-    "claimed_books": [
-      {
-        "title": "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
-        "author": [
-          "Matthew Pile"
-        ],
-        "genre": [
-          "Bee culture"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ca",
-    "username": "Omari_Langosh8",
-    "firebase_id": "86c4a85b-7b18-4e73-85ec-6b81ded03816",
-    "name": "Clara Howe",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4cb",
-    "username": "Donald_McGlynn14",
-    "firebase_id": "2f5de8eb-9eb6-465b-acfd-768ce5615272",
-    "name": "Yvonne Von",
-    "claimed_books": [
-      {
-        "title": "A Scintillating Anion Exchange Resin",
-        "author": [
-          "Alvin H. Heimbuch"
-        ],
-        "genre": [
-          "Organic scintillators"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4cc",
-    "username": "Sonya.Kuhic",
-    "firebase_id": "662115d1-ca4c-40e7-9876-228961b318cc",
-    "name": "Nelson Daugherty",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4cd",
-    "username": "Johnathan.Mohr",
-    "firebase_id": "3bf50081-5730-4151-bcea-240427d3e9cf",
-    "name": "Micheal Johnson",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ce",
-    "username": "Theron.Renner34",
-    "firebase_id": "4d654067-be54-4523-9e57-e0cb543f8f12",
-    "name": "Laurie White",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4cf",
-    "username": "Audreanne_Bauch13",
-    "firebase_id": "a8de086e-c165-4dd7-9d7b-dd99f03f8265",
-    "name": "Nelson Okuneva",
-    "claimed_books": [
-      {
-        "title": "A Scintillating Anion Exchange Resin",
-        "author": [
-          "Alvin H. Heimbuch"
-        ],
-        "genre": [
-          "Organic scintillators"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4d0",
-    "username": "Pamela34",
-    "firebase_id": "26bf247b-f07b-44ce-9a8e-22f64aa8400e",
-    "name": "Jeanne Zieme",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4d1",
-    "username": "Brendan_Smith23",
-    "firebase_id": "8e4dcbf9-e461-4343-bcc9-a9d5fe63fd07",
-    "name": "Billie Simonis",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4d2",
-    "username": "Waino_Brown",
-    "firebase_id": "508b509e-2c81-4f42-bf1d-e3125148d137",
-    "name": "Edna Dibbert DDS",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4d3",
-    "username": "Kenyon_Kris21",
-    "firebase_id": "d8970050-8177-43e9-bcd1-3c67dac7e746",
-    "name": "Robert Conroy",
-    "claimed_books": [
-      {
-        "title": "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
-        "author": [
-          "John SINCLAIR (Right Hon. Sir)"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4d4",
-    "username": "Addison_Quitzon92",
-    "firebase_id": "f225a513-006c-41b6-92d1-33a756dd520d",
-    "name": "Courtney Gutmann",
-    "claimed_books": [
-      {
-        "title": "A More Perfect Union",
-        "author": [
-          "Hana Schank"
-        ],
-        "genre": [
-          "Family & Relationships"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4d5",
-    "username": "Joanie.Pollich42",
-    "firebase_id": "ffb62243-4835-4e2d-a5a8-fe3c710b0595",
-    "name": "Lorenzo Osinski",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4d6",
-    "username": "Winona22",
-    "firebase_id": "96df754e-818c-4908-bc17-1437341639fb",
-    "name": "Rachael Kunde",
-    "claimed_books": [
-      {
-        "title": "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
-        "author": [
-          "Matthew Pile"
-        ],
-        "genre": [
-          "Bee culture"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4d7",
-    "username": "Llewellyn_Lubowitz",
-    "firebase_id": "c6707321-451f-4d8e-a73d-6e6ded1548d0",
-    "name": "Abraham Becker",
-    "claimed_books": [
-      {
-        "title": "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
-        "author": [
-          "John SINCLAIR (Right Hon. Sir)"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4d8",
-    "username": "Annie61",
-    "firebase_id": "8771fab2-b474-4c96-894a-146b1b9c7057",
-    "name": "Nellie Schaden",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4d9",
-    "username": "Breanna88",
-    "firebase_id": "78cefb62-a83e-486b-8a6f-ae8198897846",
-    "name": "Joseph Schaden",
-    "claimed_books": [
-      {
-        "title": "A Scintillating Anion Exchange Resin",
-        "author": [
-          "Alvin H. Heimbuch"
-        ],
-        "genre": [
-          "Organic scintillators"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4da",
-    "username": "Lukas_Bahringer",
-    "firebase_id": "53ac9e43-5215-421a-9e8c-455ba923b33a",
-    "name": "Angelina Quigley",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4db",
-    "username": "Sharon_Boyle",
-    "firebase_id": "5279c3f0-0462-43ee-bae8-7752f6f45114",
-    "name": "May Orn",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4dc",
-    "username": "Eldon.Wuckert",
-    "firebase_id": "b1911232-4858-4cbe-9a08-052a563dbef5",
-    "name": "Lila Bartell I",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4dd",
-    "username": "Stephen.Schultz97",
-    "firebase_id": "401e839c-3c7f-46f2-a46d-388457444efc",
-    "name": "Bessie Hoeger",
-    "claimed_books": [
-      {
-        "title": "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
-        "author": [
-          "John SINCLAIR (Right Hon. Sir)"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4de",
-    "username": "Julius7",
-    "firebase_id": "53ce2b31-222b-4fdf-818c-2ca4ed5f8dba",
-    "name": "Toni Walker",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4df",
-    "username": "Demetrius_Wunsch17",
-    "firebase_id": "063c2024-269d-48e7-8953-9c172febfdfc",
-    "name": "Colin Reinger",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4e0",
-    "username": "Rosie.Cummings",
-    "firebase_id": "45720b98-2849-4d5b-ab7b-a78358aaf5e8",
-    "name": "Kerry Carter II",
-    "claimed_books": [
-      {
-        "title": "A Scintillating Anion Exchange Resin",
-        "author": [
-          "Alvin H. Heimbuch"
-        ],
-        "genre": [
-          "Organic scintillators"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4e1",
-    "username": "Reymundo98",
-    "firebase_id": "c9f71d12-6dc4-4a1d-9567-323fa231d7e1",
-    "name": "Arthur Trantow",
-    "claimed_books": [
-      {
-        "title": "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
-        "author": [
-          "Claude L. Waring",
-          "C. S. Annell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4e2",
-    "username": "Cornelius_Hettinger21",
-    "firebase_id": "c9b2910d-a38e-4f66-a117-081f7d1eb41f",
-    "name": "Diane Emmerich",
-    "claimed_books": [
-      {
-        "title": "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
-        "author": [
-          "Matthew Pile"
-        ],
-        "genre": [
-          "Bee culture"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4e3",
-    "username": "Maybell68",
-    "firebase_id": "83cefd0d-80da-46fb-a7f2-134aa112dbc6",
-    "name": "Jessica Crona",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4e4",
-    "username": "Milan.Lynch",
-    "firebase_id": "e97050d4-51e8-4c2d-8876-6e9dae125f1d",
-    "name": "Kari Dickinson",
-    "claimed_books": [
-      {
-        "title": "A Theory of Semiotics",
-        "author": [
-          "Umberto Eco"
-        ],
-        "genre": [
-          "Literary Criticism"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4e5",
-    "username": "Brenda_Ratke",
-    "firebase_id": "966ff404-388c-4ecb-b807-0da76c1c1383",
-    "name": "Claudia Legros",
-    "claimed_books": [
-      {
-        "title": "A Vast Machine",
-        "author": [
-          "Paul N. Edwards"
-        ],
-        "genre": [
-          "Technology & Engineering"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4e6",
-    "username": "Dejon.Pollich45",
-    "firebase_id": "f8718668-2218-4ebf-a096-b947e803f773",
-    "name": "Lucy Herman",
-    "claimed_books": [
-      {
-        "title": "A Scintillating Anion Exchange Resin",
-        "author": [
-          "Alvin H. Heimbuch"
-        ],
-        "genre": [
-          "Organic scintillators"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4e7",
-    "username": "Price.Littel73",
-    "firebase_id": "1ec38b9f-0ba1-4cb1-b5b2-89a80ac6f339",
-    "name": "Herbert Blick IV",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4e8",
-    "username": "Rhea.Stokes",
-    "firebase_id": "3eacc905-5f74-4429-a334-6e493502fab8",
-    "name": "Johnnie Denesik",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4e9",
-    "username": "Delpha37",
-    "firebase_id": "cc58df7b-f15c-4cfd-ad4a-93fa021a26fb",
-    "name": "Ethel Lynch",
-    "claimed_books": [
-      {
-        "title": "A Guide to Unemployment Insurance Benefit Appeals",
-        "author": [
-          "United States. Unemployment Insurance Service"
-        ],
-        "genre": [
-          "Administrative procedure"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=XJdmXodxWp4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ea",
-    "username": "Britney.Auer",
-    "firebase_id": "cfbb6d82-861e-4d49-b303-e2dbcb298649",
-    "name": "Timothy Torphy",
-    "claimed_books": [
-      {
-        "title": "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
-        "author": [
-          "Richard Helsham"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4eb",
-    "username": "Saul_Monahan59",
-    "firebase_id": "1f2941ab-5b5a-4dfc-b4e2-1c8a874c33ab",
-    "name": "Ernest Wisozk",
-    "claimed_books": [
-      {
-        "title": "A Scintillating Anion Exchange Resin",
-        "author": [
-          "Alvin H. Heimbuch"
-        ],
-        "genre": [
-          "Organic scintillators"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ec",
-    "username": "Jana_Wisozk",
-    "firebase_id": "9124c115-026f-4dad-a818-2be0121efcdc",
-    "name": "Kristi Rolfson",
-    "claimed_books": [
-      {
-        "title": "A Scintillating Anion Exchange Resin",
-        "author": [
-          "Alvin H. Heimbuch"
-        ],
-        "genre": [
-          "Organic scintillators"
-        ],
-        "thumbnail": "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ed",
-    "username": "Humberto_Wisoky57",
-    "firebase_id": "fe3ce502-fcac-4d76-97f8-6c280ff413b1",
-    "name": "Loren Weber",
-    "claimed_books": [
-      {
-        "title": "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
-        "author": [
-          "John SINCLAIR (Right Hon. Sir)"
-        ],
-        "genre": "Action",
-        "thumbnail": "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ee",
-    "username": "Elmore79",
-    "firebase_id": "f1a6d611-1944-4092-9684-04fa5ffbff16",
-    "name": "Renee Monahan",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  },
-  {
-    "_id": "6425433da85be19788f0f4ef",
-    "username": "Blaze47",
-    "firebase_id": "ef2fd909-e5cd-434c-a452-25eceb00fd2f",
-    "name": "Olivia Keebler",
-    "claimed_books": [
-      {
-        "title": "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
-        "author": [
-          "James Howell"
-        ],
-        "genre": "Romance",
-        "thumbnail": "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
-      }
-    ]
-  }
-]
+    _id: "642548555b3c0d0478ba585d",
+    username: "Marquis69",
+    firebase_id: "02d1fad1-1022-4e88-93c8-e0fcc0874306",
+    name: "Roger Monahan",
+    claimed_books: [
+      {
+        title:
+          "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
+        author: "John SINCLAIR (Right Hon. Sir)",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba585e",
+    username: "Jamey.Hagenes",
+    firebase_id: "554c1787-08fa-4630-94ef-67d5f8a7de4d",
+    name: "Mr. Regina Cummings",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba585f",
+    username: "Dagmar_Smitham",
+    firebase_id: "595a7bc7-d714-42dd-913f-226468093ab9",
+    name: "Ms. Bill Aufderhar",
+    claimed_books: [
+      {
+        title:
+          "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
+        author: "John SINCLAIR (Right Hon. Sir)",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5860",
+    username: "Gretchen.Krajcik76",
+    firebase_id: "efcc0d73-4bd7-49d9-9663-3978e2e5e42b",
+    name: "Pamela Rath",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5861",
+    username: "King_Hirthe",
+    firebase_id: "33b29d86-17c4-4555-9605-6c2ca7d3c0f0",
+    name: "Jonathon Breitenberg",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5862",
+    username: "Shyann_Grant88",
+    firebase_id: "5c0044ad-9a32-4ec7-b9be-b02d34e14a6e",
+    name: "Steve Purdy III",
+    claimed_books: [
+      {
+        title:
+          "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
+        author: "Claude L. Waring",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5863",
+    username: "Zelma_Bruen63",
+    firebase_id: "d227e528-2760-48b3-877c-bb5ebf48c127",
+    name: "Carmen Ledner",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5864",
+    username: "Rosalyn_Ernser",
+    firebase_id: "de73915b-8f75-4b3a-8ba5-6ea0f1f2467d",
+    name: "Constance Hermiston",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5865",
+    username: "Moriah_Maggio64",
+    firebase_id: "723d4b82-4311-46d7-a432-524c24514434",
+    name: "Courtney Pfeffer",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5866",
+    username: "Ruthe.OConnell",
+    firebase_id: "450aa7eb-9d19-485d-ae20-c3f16a740bc1",
+    name: "Heidi Heaney",
+    claimed_books: [
+      {
+        title: "A Theory of Semiotics",
+        author: "Umberto Eco",
+        genre: "Family",
+        thumbnail:
+          "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5867",
+    username: "Isaac97",
+    firebase_id: "eb679eee-d775-4650-a97e-7bb7a6380b26",
+    name: "Johanna Luettgen",
+    claimed_books: [
+      {
+        title: "A Theory of Semiotics",
+        author: "Umberto Eco",
+        genre: "Family",
+        thumbnail:
+          "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5868",
+    username: "Neva69",
+    firebase_id: "450b7676-c009-4927-8050-8b1daffda87b",
+    name: "Charlene Torphy",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5869",
+    username: "Leif.Mosciski63",
+    firebase_id: "2e94e949-6f4c-4696-b646-8dc5c2968648",
+    name: "Franklin Adams",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba586a",
+    username: "Levi_Heaney",
+    firebase_id: "f608ecf7-c3fe-4d6b-aae7-6b6d19fb89b1",
+    name: "Teresa Rutherford",
+    claimed_books: [
+      {
+        title:
+          "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
+        author: "Claude L. Waring",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba586b",
+    username: "Trever_Kozey45",
+    firebase_id: "3aec0404-fd6c-4ea4-8077-16b6198846f3",
+    name: "Allison Cormier",
+    claimed_books: [
+      {
+        title: "A Theory of Semiotics",
+        author: "Umberto Eco",
+        genre: "Family",
+        thumbnail:
+          "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba586c",
+    username: "Antonetta50",
+    firebase_id: "5640df06-e640-4e0d-8b97-f806646c420c",
+    name: "Corey Conroy",
+    claimed_books: [
+      {
+        title:
+          "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
+        author: "Matthew Pile",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba586d",
+    username: "Marcelle.Hoppe",
+    firebase_id: "cda83a32-c215-4c30-928c-cd3a65c003e7",
+    name: "Doreen Dooley",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba586e",
+    username: "Torey.Ziemann",
+    firebase_id: "097beb87-0485-4722-9189-1730cce420a4",
+    name: "Francis Zulauf",
+    claimed_books: [
+      {
+        title:
+          "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
+        author: "John SINCLAIR (Right Hon. Sir)",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba586f",
+    username: "Leo_Rodriguez",
+    firebase_id: "9efaee28-3465-40e4-beae-57156879c9bd",
+    name: "Kate Heller",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5870",
+    username: "Carter.Gleason",
+    firebase_id: "2efb0972-adf7-416a-81a3-0828e86090c3",
+    name: "Bryant Jaskolski",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5871",
+    username: "Lindsey81",
+    firebase_id: "daa87221-cc88-4a4d-86c2-2ddd44f86676",
+    name: "Ms. Laurie Gislason",
+    claimed_books: [
+      {
+        title:
+          "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
+        author: "John SINCLAIR (Right Hon. Sir)",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5872",
+    username: "Dwight.Schaden33",
+    firebase_id: "693f83bd-f610-40cc-87a4-0039f108c212",
+    name: "Matthew Muller",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5873",
+    username: "Adolphus_Hamill",
+    firebase_id: "19b7efd3-799b-49dd-ac79-6fc17bd539e1",
+    name: "Ms. Dean Fadel",
+    claimed_books: [
+      {
+        title: "A Book for Her",
+        author: "Bridget Christie",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=JC33BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5874",
+    username: "Louisa.Romaguera",
+    firebase_id: "4c6ac69e-77de-4de9-8900-483cfe53ebed",
+    name: "Sam Kshlerin",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5875",
+    username: "Katlyn_Boyle73",
+    firebase_id: "4f587105-a483-470b-87f6-c52aab97cb64",
+    name: "Marlon Hartmann",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5876",
+    username: "Lester.Kutch",
+    firebase_id: "4b9f189c-cf73-41b9-aa82-f14c62995cd2",
+    name: "Dianna Strosin III",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5877",
+    username: "Mozelle.Borer",
+    firebase_id: "03b074f4-3c2a-4ea5-a02d-462189bfd909",
+    name: "Connie Pfeffer",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5878",
+    username: "Aurelio.Dibbert",
+    firebase_id: "42f70ac8-a1e8-45fc-8e7d-e162c27a0f53",
+    name: "Ruben VonRueden",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5879",
+    username: "Zoila.White16",
+    firebase_id: "a460bd31-52fd-4bf3-a4af-fad64de8ca7a",
+    name: "June Brekke",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba587a",
+    username: "Michaela.Kub39",
+    firebase_id: "931dccd1-375c-452c-b3ab-0c680afa3b8f",
+    name: "Kari Dicki",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba587b",
+    username: "Sylvia_Dach",
+    firebase_id: "92cd08f4-6f34-437b-add8-0d7bd01fe3fa",
+    name: "Monica Kozey",
+    claimed_books: [
+      {
+        title: "A Book for Her",
+        author: "Bridget Christie",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=JC33BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba587c",
+    username: "Ansel.Harvey",
+    firebase_id: "10f207e6-35b2-41ce-a228-f5566c421bb3",
+    name: "Lucia Bernier",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba587d",
+    username: "Antwan.Huels",
+    firebase_id: "7f3ae9a6-a021-4b37-896a-716769580f01",
+    name: "Ryan Waelchi I",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba587e",
+    username: "Alexzander_Cummerata",
+    firebase_id: "bcb4b12e-4f1e-47ac-9274-10cb0058c4a4",
+    name: "Nellie Hickle",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba587f",
+    username: "Nicola2",
+    firebase_id: "2e64d331-72bd-4a3f-b88f-78ecd6f62a87",
+    name: "Mrs. Rebecca Leannon",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5880",
+    username: "Diamond_Homenick72",
+    firebase_id: "32c1cc34-e6f3-4bd9-8802-3c044eb0f913",
+    name: "Francis Smith",
+    claimed_books: [
+      {
+        title: "A Book for Her",
+        author: "Bridget Christie",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=JC33BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5881",
+    username: "Audra.Franecki",
+    firebase_id: "f95a10db-2064-432a-a976-5694a8deaef8",
+    name: "Ralph Torp",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5882",
+    username: "Jermey36",
+    firebase_id: "a1c258e1-3092-4569-8e8a-160284169b43",
+    name: "Ellis Barrows",
+    claimed_books: [
+      {
+        title:
+          "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
+        author: "Matthew Pile",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5883",
+    username: "Brooks.Moore28",
+    firebase_id: "37c78c47-363d-4775-8002-75adb9a46da3",
+    name: "Jessie Hagenes",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5884",
+    username: "Brielle_Lind69",
+    firebase_id: "b9450718-f48e-4339-a2a9-8bc4b4c3369f",
+    name: "Lynn Champlin",
+    claimed_books: [
+      {
+        title: "A Theory of Semiotics",
+        author: "Umberto Eco",
+        genre: "Family",
+        thumbnail:
+          "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5885",
+    username: "Blaze.Schimmel",
+    firebase_id: "33e3c115-9db1-40de-ab02-6f305d2f581b",
+    name: "Natasha Friesen",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5886",
+    username: "Ike.Bogisich",
+    firebase_id: "ccd87078-3237-4544-a4ac-441c2f4671cd",
+    name: "Joyce Olson",
+    claimed_books: [
+      {
+        title:
+          "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
+        author: "Claude L. Waring",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5887",
+    username: "Twila_Strosin84",
+    firebase_id: "1dc50226-5071-4895-9e74-7adcd5a7d005",
+    name: "Phil Gleason",
+    claimed_books: [
+      {
+        title:
+          "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
+        author: "Matthew Pile",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5888",
+    username: "Angus_Beatty9",
+    firebase_id: "0591faad-dd7c-4943-87ac-ab8bd0350f16",
+    name: "Freda Wunsch",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5889",
+    username: "Asia_Gleason46",
+    firebase_id: "f2be77a7-af3d-4d54-bf82-a3bc2d565b35",
+    name: "Camille Greenfelder",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba588a",
+    username: "Edyth_Bernhard",
+    firebase_id: "c5f586bf-16a4-445e-8e54-0221b9364672",
+    name: "Cathy Schuster",
+    claimed_books: [
+      {
+        title:
+          "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
+        author: "John SINCLAIR (Right Hon. Sir)",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba588b",
+    username: "Mariano68",
+    firebase_id: "3c926ef9-145a-4fc1-99bd-761cdc216a4e",
+    name: "Conrad Haag",
+    claimed_books: [
+      {
+        title:
+          "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
+        author: "Matthew Pile",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba588c",
+    username: "Weston_Stamm",
+    firebase_id: "028d38aa-e189-452a-96b0-5dd1f6334011",
+    name: "Emilio Funk",
+    claimed_books: [
+      {
+        title: "A Vast Machine",
+        author: "Paul N. Edwards",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba588d",
+    username: "Yvonne.Runolfsson",
+    firebase_id: "3827829a-033a-416b-a7e3-3fefe94c1074",
+    name: "Angie Goodwin",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba588e",
+    username: "Thomas_Heathcote68",
+    firebase_id: "4a3d553b-f621-4b07-ae4a-777d82cd18d1",
+    name: "Horace Hartmann",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba588f",
+    username: "Bailee.Hackett87",
+    firebase_id: "eace73f7-ba58-4c22-93b3-9a4500e5295f",
+    name: "Mario Langworth Sr.",
+    claimed_books: [
+      {
+        title:
+          "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
+        author: "Matthew Pile",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5890",
+    username: "Crawford.Hintz",
+    firebase_id: "eb138856-ffba-4ab9-a3a4-e094eddecef4",
+    name: "Guadalupe DuBuque",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5891",
+    username: "Sandy.Lang",
+    firebase_id: "a13ffb38-c5f2-44a8-b5cc-da5c5f5a0b8f",
+    name: "Everett Hartmann",
+    claimed_books: [
+      {
+        title:
+          "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
+        author: "Claude L. Waring",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5892",
+    username: "Carlee_Wintheiser8",
+    firebase_id: "94fa6512-fc81-4b49-a3a1-c2170e6d70ca",
+    name: "Jeannie Ward Jr.",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5893",
+    username: "Bobbie76",
+    firebase_id: "d128e25a-ca37-40f6-87d4-439f068c3dc3",
+    name: "Joey Pacocha",
+    claimed_books: [
+      {
+        title: "A Theory of Semiotics",
+        author: "Umberto Eco",
+        genre: "Family",
+        thumbnail:
+          "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5894",
+    username: "Michel_Kshlerin13",
+    firebase_id: "526ef85a-79d4-4d4d-8fbe-f276173edc3b",
+    name: "Miss June Treutel",
+    claimed_books: [
+      {
+        title:
+          "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
+        author: "Matthew Pile",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5895",
+    username: "Favian51",
+    firebase_id: "e595ddfb-d85a-46ed-beba-5c362ff72b3f",
+    name: "Mrs. Alex Kirlin IV",
+    claimed_books: [
+      {
+        title: "A Theory of Semiotics",
+        author: "Umberto Eco",
+        genre: "Family",
+        thumbnail:
+          "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5896",
+    username: "Gideon.Gibson83",
+    firebase_id: "afcfd8b9-f2eb-4d10-994f-8e3a65a38178",
+    name: "Antonia Daniel",
+    claimed_books: [
+      {
+        title: "A Book for Her",
+        author: "Bridget Christie",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=JC33BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5897",
+    username: "Dakota.Mohr55",
+    firebase_id: "eb16ddeb-c219-40a2-838f-c4ba0daaea75",
+    name: "Wesley Sawayn Sr.",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5898",
+    username: "Monica_Maggio",
+    firebase_id: "b626c8e1-cfb4-4a78-9be2-141fe7cd3549",
+    name: "Lynda Franey",
+    claimed_books: [
+      {
+        title: "A Vast Machine",
+        author: "Paul N. Edwards",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba5899",
+    username: "Noah98",
+    firebase_id: "24835c14-965c-47fc-859d-c840d1889b85",
+    name: "Jan Cruickshank Jr.",
+    claimed_books: [
+      {
+        title: "A Theory of Semiotics",
+        author: "Umberto Eco",
+        genre: "Family",
+        thumbnail:
+          "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba589a",
+    username: "Russel_Kihn",
+    firebase_id: "b2dd438b-ab33-4b4e-9644-6082553cb744",
+    name: "Marco Altenwerth",
+    claimed_books: [
+      {
+        title:
+          "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
+        author: "John SINCLAIR (Right Hon. Sir)",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba589b",
+    username: "Ferne.McCullough",
+    firebase_id: "b4972125-ec0b-4694-9b25-11da72a74639",
+    name: "Sylvia Jones V",
+    claimed_books: [
+      {
+        title:
+          "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
+        author: "John SINCLAIR (Right Hon. Sir)",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba589c",
+    username: "Kali.Daugherty2",
+    firebase_id: "63bd98f0-7568-4c89-8bd5-6c347da57ad4",
+    name: "Glenda Tromp",
+    claimed_books: [
+      {
+        title: "A Book for Her",
+        author: "Bridget Christie",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=JC33BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba589d",
+    username: "Lexi89",
+    firebase_id: "c8f5a232-0505-4418-a00f-c91a5b493bd7",
+    name: "Sherman Nikolaus",
+    claimed_books: [
+      {
+        title:
+          "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
+        author: "Matthew Pile",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba589e",
+    username: "Hosea.Reinger",
+    firebase_id: "50c066b4-db3c-41ac-8090-233b633c0a09",
+    name: "Wilbur Nolan",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba589f",
+    username: "Mackenzie38",
+    firebase_id: "bcabc584-ce32-4883-85d1-32be4bc9b12d",
+    name: "Lee Wisoky",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58a0",
+    username: "Erna41",
+    firebase_id: "f32cb092-b371-422e-aa9b-4641c54cbfe4",
+    name: "Mrs. Irvin Ondricka",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58a1",
+    username: "Johnathan_Gerhold",
+    firebase_id: "031f5d5c-0f30-4151-85de-171ffe390305",
+    name: "June Hodkiewicz",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58a2",
+    username: "Cristian.Bartell2",
+    firebase_id: "3cf85538-c51d-4950-af6d-b2e12529e4f6",
+    name: "Peter Green",
+    claimed_books: [
+      {
+        title: "A Theory of Semiotics",
+        author: "Umberto Eco",
+        genre: "Family",
+        thumbnail:
+          "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58a3",
+    username: "Steve51",
+    firebase_id: "18dd3591-82f5-48a8-9d83-96577f54ea6d",
+    name: "Dr. Sharon Gusikowski",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58a4",
+    username: "Rhoda88",
+    firebase_id: "992f452e-adc9-4159-97d6-73ce7e8f7cd8",
+    name: "Lee Frami",
+    claimed_books: [
+      {
+        title:
+          "Lexicon Tetraglotton, an English-French-Italian-Spanish Dictionary: Whereunto is Adjoined a Large Nomenclature of the Proper Terms (in All the Four) Belonging to Several Arts and Sciences ... Divided Into Fiftie Two Sections; with Another Volume of the Choicest Proverbs in All the Said Toungs, (consisting of Divers Compleat Tomes) and the English Translated Into the Other Three ... Moroever, There are Sundry Familiar Letters and Verses Running All in Proverbs ... By the Labours, and Lucubrations of James Hovvell",
+        author: "James Howell",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=-ON_W1ubAmoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58a5",
+    username: "Lydia_Mayert",
+    firebase_id: "5c93dc7d-8f56-48fe-90af-02c585625977",
+    name: "Arturo Marquardt",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58a6",
+    username: "Graham_Braun88",
+    firebase_id: "f7f82852-9f6a-4306-b7a6-0498100cad12",
+    name: "Byron Smitham",
+    claimed_books: [
+      {
+        title:
+          "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
+        author: "Claude L. Waring",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58a7",
+    username: "Green48",
+    firebase_id: "fe852269-2108-4330-a8ae-4d1e8b56e4e7",
+    name: "Doug Funk",
+    claimed_books: [
+      {
+        title:
+          "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
+        author: "Claude L. Waring",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58a8",
+    username: "Emilia.Carter97",
+    firebase_id: "5976e80e-f14e-42ea-b538-35ac6abc263b",
+    name: "Dr. Glenn Herzog",
+    claimed_books: [
+      {
+        title: "A Vast Machine",
+        author: "Paul N. Edwards",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58a9",
+    username: "Ottis55",
+    firebase_id: "1f6c877c-dfe1-4c6e-8a3d-eaa1f3f06a7f",
+    name: "Robin Feeney",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58aa",
+    username: "Elinore.Koelpin82",
+    firebase_id: "65688fd9-22e5-4d2b-a279-d14bfff2302b",
+    name: "Derek Zemlak",
+    claimed_books: [
+      {
+        title: "A Book for Her",
+        author: "Bridget Christie",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=JC33BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58ab",
+    username: "Deron_Kunde4",
+    firebase_id: "8ecc0fc3-4fea-4afa-bc63-a6e2a4748b54",
+    name: "Ms. Edna Batz",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58ac",
+    username: "Otto46",
+    firebase_id: "144a643c-4de3-4b3b-83af-a2f6bb81754c",
+    name: "Marcella Kessler",
+    claimed_books: [
+      {
+        title:
+          "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
+        author: "Claude L. Waring",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58ad",
+    username: "Margaret_Ruecker33",
+    firebase_id: "bfd6f7eb-f0b8-419f-beaa-3b5d8e04b253",
+    name: "Darnell Upton",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58ae",
+    username: "Camille_Zboncak26",
+    firebase_id: "3b71b69f-9c4c-4ad5-b97e-f9f52c058702",
+    name: "Taylor Bechtelar",
+    claimed_books: [
+      {
+        title: "A Book for Her",
+        author: "Bridget Christie",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=JC33BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58af",
+    username: "Ernesto_Nikolaus",
+    firebase_id: "5301bf65-11df-4867-a9d8-5ec86e6155c4",
+    name: "Terry Wuckert",
+    claimed_books: [
+      {
+        title:
+          "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
+        author: "Claude L. Waring",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58b0",
+    username: "Roscoe64",
+    firebase_id: "cbec2932-43e7-44a7-bf6a-c921541b9fae",
+    name: "Karen Ondricka",
+    claimed_books: [
+      {
+        title: "A Vast Machine",
+        author: "Paul N. Edwards",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58b1",
+    username: "Franz_Huel",
+    firebase_id: "6d1b185f-c80f-427e-8854-19819aaa345c",
+    name: "Karla Graham",
+    claimed_books: [
+      {
+        title: "A Vast Machine",
+        author: "Paul N. Edwards",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58b2",
+    username: "Van90",
+    firebase_id: "4386f06a-0fc8-454f-91f6-ba0e27523e8c",
+    name: "Margie Stehr",
+    claimed_books: [
+      {
+        title: "A Book for Her",
+        author: "Bridget Christie",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=JC33BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58b3",
+    username: "Levi8",
+    firebase_id: "57994877-f384-41a6-b68a-2cfdbaef8b4e",
+    name: "Garry Wilkinson",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58b4",
+    username: "Octavia_Lowe94",
+    firebase_id: "a564729d-c143-4c5e-8914-bd7e51b85ac3",
+    name: "Dan Mayer",
+    claimed_books: [
+      {
+        title:
+          "Proposals for establishing ... a Joint Stock Tontine Company ... for the purpose of ascertaining the principles of agricultural improvement, etc. L.P.",
+        author: "John SINCLAIR (Right Hon. Sir)",
+        genre: "Action",
+        thumbnail:
+          "http://books.google.com/books/content?id=bPQCzE1eTbcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58b5",
+    username: "Rebecca_Berge0",
+    firebase_id: "8785abae-688d-4d11-9c63-6e760fc08131",
+    name: "Rachael Ledner",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58b6",
+    username: "Devonte_Koss41",
+    firebase_id: "c5012029-4214-4c2b-afce-40682f331a89",
+    name: "Elena Tremblay",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58b7",
+    username: "Dayna99",
+    firebase_id: "40d453b7-d11a-4c15-95e8-4f48746fac7b",
+    name: "Mrs. Rita Schimmel",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58b8",
+    username: "Marguerite_Boehm",
+    firebase_id: "69bfb227-1f09-4d90-b9e0-15979526ca56",
+    name: "Juana Harber",
+    claimed_books: [
+      {
+        title:
+          "The Bee Cultivator's Assistant, Or a New and Complete Discovery in the Management of Bees",
+        author: "Matthew Pile",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=zAA6VnBKAHUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58b9",
+    username: "General_Hansen",
+    firebase_id: "301d346e-e035-4db0-a26c-4cf6bfc03edd",
+    name: "Betsy Kassulke",
+    claimed_books: [
+      {
+        title:
+          "A Semiquantitative Spectrographic Method for the Analysis of Minerals, Rocks, and Ores",
+        author: "Claude L. Waring",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=RU9ntXip_yMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58ba",
+    username: "Gerry.Wisozk",
+    firebase_id: "06b7f04d-4563-4a85-892e-affef74d2533",
+    name: "Ronnie Keebler",
+    claimed_books: [
+      {
+        title: "A Scintillating Anion Exchange Resin",
+        author: "Alvin H. Heimbuch",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=DhoYy_CrHfkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58bb",
+    username: "Lisandro_Kautzer14",
+    firebase_id: "747b0f0f-1d26-4949-8477-39e0efbb5dbe",
+    name: "Pete Abbott",
+    claimed_books: [
+      {
+        title: "A Vast Machine",
+        author: "Paul N. Edwards",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58bc",
+    username: "Giovanny32",
+    firebase_id: "5b574c38-2e41-437d-bd9b-0cbe64b6e86e",
+    name: "Tonya Sawayn",
+    claimed_books: [
+      {
+        title: "A More Perfect Union",
+        author: "Hana Schank",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=vlwix-2zvvEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58bd",
+    username: "Carlie.Hansen",
+    firebase_id: "71d7f12b-0520-4046-a58d-afb3b3c36f5a",
+    name: "Conrad King",
+    claimed_books: [
+      {
+        title: "A Vast Machine",
+        author: "Paul N. Edwards",
+        genre: "Comedy",
+        thumbnail:
+          "http://books.google.com/books/content?id=crhNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58be",
+    username: "Deanna_Cronin",
+    firebase_id: "5cd67ed5-75df-47b4-ae02-d9de851093f4",
+    name: "Ross Hessel",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58bf",
+    username: "Elmer_Huel75",
+    firebase_id: "0beb5fbf-a332-4707-9542-aaa0d9458831",
+    name: "Henrietta Sanford",
+    claimed_books: [
+      {
+        title:
+          "A Course of Lectures in Natural Philosophy. By the Late Richard Helsham, M.D. Professor of Physik and Natural Philosophy in the Uniuersity of Dublin. Published by Bryan Robinson, M.D",
+        author: "Richard Helsham",
+        genre: "Romance",
+        thumbnail:
+          "http://books.google.com/books/content?id=m8jyryVfjSYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+  {
+    _id: "642548555b3c0d0478ba58c0",
+    username: "Sonny.Maggio",
+    firebase_id: "ba43f43b-0620-4729-8ff5-6a8cb1f305e6",
+    name: "Benjamin Schmidt",
+    claimed_books: [
+      {
+        title: "A Theory of Semiotics",
+        author: "Umberto Eco",
+        genre: "Family",
+        thumbnail:
+          "http://books.google.com/books/content?id=BoXO4ItsuaMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      },
+    ],
+  },
+];
 
-export default userData
+export default userData;

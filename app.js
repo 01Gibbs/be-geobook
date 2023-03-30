@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/api", apiRouter);
 
 app.use(handleCustomError);
-app.use(handleMongooseErrors)
+app.use(handleMongooseErrors);
 app.use(handle500s);
 
 export default app;

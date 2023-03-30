@@ -15,9 +15,9 @@ const fetchClaimedBooks = () => {
       bookData.map(book => {
         return claimedBooks.push({
           title: book.volumeInfo.title,
-          author: book.volumeInfo.authors,
+          author: book.volumeInfo.authors[0],
           genre:
-            book.volumeInfo.categories || genres[Math.floor(Math.random()*4)],
+            genres[Math.floor(Math.random()*4)],
           thumbnail: book.volumeInfo.imageLinks.smallThumbnail
         })
       })
