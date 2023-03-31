@@ -14,8 +14,11 @@ export const getBook = async (req, res, next) => {
     const bookData = await bookModels
       .findById(req.params.id)
       .setOptions({ sanitizeFilter: true });
-    !bookData ? res.status(404).send({ msg: "Book not found" }) : null;
-    return res.status(200).send({ book: bookData });
+      if(!bookData){
+        await Promise.reject({status:404, msg:'Book not found'}) 
+      }else{
+        return res.status(200).send({ book: bookData });
+      }
   } catch (error) {
     next(error);
   }
@@ -43,8 +46,13 @@ export const deleteBook = async (req, res, next) => {
     const bookData = await bookModels.findByIdAndDelete(req.params.id);
 
     const deletedBook = await bookModels.findById(req.params.id);
-    bookData === null ? res.status(404).send({ msg: "Book not found" }) : null;
-    res.status(200).send({ msg: "Book deleted" });
+
+    if(!bookData){
+      await Promise.reject({status:404, msg:'Book not found'}) 
+    }else{
+      return res.status(200).send({ msg: "Book deleted" })
+    }
+  
   } catch (error) {
     next(error);
   }
