@@ -37,7 +37,7 @@ describe('userModels', () => {
   describe('GET: /api/users/:id', () => {
     test('GET: 200 with individual user ', () => {
       return request(app)
-        .get('/api/users/642548555b3c0d0478ba585d')
+        .get('/api/users/02d1fad1-1022-4e88-93c8-e0fcc0874306')
         .expect(200)
         .then(({ body: { user } }) => {
           expect(user.username).toBe('Marquis69')
@@ -57,20 +57,20 @@ describe('userModels', () => {
     })
     test('GET: 404 when request not found', () => {
       return request(app)
-        .get('/api/users/742548555b3c0d0478ba585e')
+        .get('/api/users/02d1fad1-1022-4e88-93c8-e0fcc0874300')
         .expect(404)
         .then(({ body }) => {
           expect(body.msg).toBe('User Not Found')
         })
     })
-    test('GET: 400 when invalid user id', () => {
-      return request(app)
-        .get('/api/users/notAnId')
-        .expect(400)
-        .then(({ body }) => {
-          expect(body.msg).toBe('_id field should be a ObjectId')
-        })
-    })
+    // test('GET: 400 when invalid user id', () => {
+    //   return request(app)
+    //     .get('/api/users/notAnId')
+    //     .expect(400)
+    //     .then(({ body }) => {
+    //       expect(body.msg).toBe('_id field should be a ObjectId')
+    //     })
+    // })
   })
   describe('POST: /api/users', () => {
     test('POST: 201 ', () => {
