@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose =  require("mongoose");
 
 const GeoSchema = new mongoose.Schema(
   {
@@ -47,4 +47,4 @@ const bookSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model("books", bookSchema);
+module.exports = mongoose.model("books", bookSchema);

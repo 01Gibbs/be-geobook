@@ -1,16 +1,16 @@
-import server from "express";
-import {
+
+const {
   getBooks,
   getBook,
   postBook,
   deleteBook,
-} from "../controllers/books-controllers.js";
+} = require("../controllers/books-controllers.js");
 
-const booksRouter = server.Router();
+const booksRouter = require('express').Router()
 
 booksRouter.route("/").get(getBooks).post(postBook);
 
 //Get by Username Method
 booksRouter.route("/:id").get(getBook).delete(deleteBook);
 
-export default booksRouter;
+module.exports = booksRouter;

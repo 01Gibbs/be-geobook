@@ -1,11 +1,11 @@
-import app from "./app.js";
-import dotenv from "dotenv";
-dotenv.config({
+const app = require("./app.js");
+require('dotenv').config({
   path: `.env`,
-});
+})
+
 const mongoString = process.env.DATABASE_URL;
 
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const { PORT = 9090 } = process.env;
 

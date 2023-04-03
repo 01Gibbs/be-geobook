@@ -1,11 +1,10 @@
-import server from "express";
-import usersRouter from "./users-router.js";
-import booksRouter from "./books-router.js";
+const usersRouter = require('./users-router.js')
+const booksRouter = require('./books-router.js')
 
-const apiRouter = server.Router();
+const apiRouter = require('express').Router()
 
-apiRouter.use("/users", usersRouter);
+apiRouter.use('/users', usersRouter)
 
-apiRouter.use("/books", booksRouter);
+apiRouter.use('/books', booksRouter)
 
-export default apiRouter;
+module.exports = apiRouter

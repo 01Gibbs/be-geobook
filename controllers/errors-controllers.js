@@ -1,4 +1,4 @@
-export const handleCustomError = (error, request, response, next) => {
+exports.handleCustomError = (error, request, response, next) => {
   if (error.status && error.msg) {
     return response.status(error.status).send({ msg: error.msg });
   } else {
@@ -6,7 +6,7 @@ export const handleCustomError = (error, request, response, next) => {
   }
 };
 
-export const handleMongooseErrors = (error, request, response, next) => {
+exports.handleMongooseErrors = (error, request, response, next) => {
   if (error.errors) {
     const kind = error.errors[Object.keys(error.errors)[0]].kind;
     const path = error.errors[Object.keys(error.errors)[0]].path;
@@ -28,7 +28,7 @@ export const handleMongooseErrors = (error, request, response, next) => {
   }
 };
 
-export const handle500s = (error, request, response, next) => {
+exports.handle500s = (error, request, response, next) => {
   console.log(error);
   return response.status(500).send({
     msg: "Internal Server Error",

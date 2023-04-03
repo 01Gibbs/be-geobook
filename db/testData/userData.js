@@ -1553,4 +1553,4 @@ const userData = [
   },
 ];
 
-export default userData;
+module.exports = userData;

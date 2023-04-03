@@ -1,6 +1,6 @@
-import userModel from '../model/user.js'
+const userModel = require('../model/user.js')
 
-export const getUsers = async (req, res) => {
+exports.getUsers = async (req, res) => {
   try {
     const userData = await userModel.find()
     return res.status(200).send({ users: userData })
@@ -9,7 +9,7 @@ export const getUsers = async (req, res) => {
   }
 }
 
-export const getUser = async (req, res, next) => {
+exports.getUser = async (req, res, next) => {
   try {
     const userData = await userModel
       .findOne({ firebase_id: req.params.id })
@@ -24,7 +24,7 @@ export const getUser = async (req, res, next) => {
   }
 }
 
-export const postUser = async (req, res, next) => {
+exports.postUser = async (req, res, next) => {
   const auth = req.currentUser
   if (auth) {
     console.log('authorized!')
