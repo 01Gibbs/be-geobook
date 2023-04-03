@@ -1,7 +1,7 @@
-import * as admin from 'firebase-admin'
+import { initializeApp } from "firebase-admin/app"
 import serviceAccount from './authkey.json'
 
-admin.initializeApp({
+initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: 'https://geobook2.firebaseapp.com'
 })
