@@ -1,5 +1,4 @@
-
-import admin from 'firebase-admin'
+import * as admin from 'firebase-admin'
 import serviceAccount from './authkey.json'
 
 admin.initializeApp({
