@@ -21,4 +21,4 @@ async function decodeIDToken(req, res, next) {
     next()
 }
 
-module.exports = decodeIDToken
+export default decodeIDToken
