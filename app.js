@@ -5,7 +5,7 @@ import {
   handleMongooseErrors
 } from './controllers/errors-controllers.js'
 import apiRouter from './routes/api-router.js'
-import cors from 'cors'
+import * as cors from 'cors'
 import decodeIDToken from './authenticateToken.js'
 
 const app = express()
