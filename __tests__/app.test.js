@@ -188,7 +188,7 @@ describe('bookModels', () => {
         .get('/api/books/5425407dba5e321df2803b39')
         .expect(404)
         .then(({ body: { msg } }) => {
-          expect(msg).toBe('Book not found.')
+          expect(msg).toBe('Book not found')
         })
     })
     test('400 invalid book id', () => {
@@ -302,4 +302,32 @@ describe('bookModels', () => {
         })
       })
   })
+
+  describe('DELETE: /api/books/:id', () => {
+    test('200 responds with msg', ()=>{
+      return request(app)
+      .delete('/api/books/6425407dba5e321df2803b39')
+      .expect(200)
+      .then(({body: {msg}}) =>{
+        expect(msg).toBe('Book deleted')
+      })
+    })
+    test('404 non-existent book', ()=>{
+      return request(app)
+      .delete('/api/books/5425407dba5e321df2803b39')
+      .expect(404)
+      .then(({body: {msg}}) =>{
+        expect(msg).toBe('Book not found')
+      })
+    })
+    test('400 invalid book id', ()=>{
+      return request(app)
+      .delete('/api/books/notABookId6')
+      .expect(400)
+      .then(({body: {msg}}) =>{
+        expect(msg).toBe('_id field should be a ObjectId')
+      })
+    })
+  });
+  
 })
