@@ -375,4 +375,4 @@ const bookData = [
     }
   ]
   
-  export default bookData
+ module.exports = bookData

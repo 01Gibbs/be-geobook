@@ -1,7 +1,7 @@
-import axios from 'axios'
-import { faker } from '@faker-js/faker'
-import mongoose from 'mongoose'
-import fs from 'fs/promises'
+const axios = require('axios')
+const { faker } = require('@faker-js/faker')
+const mongoose = require('mongoose')
+const fs = require('fs/promises')
 
 
 const fetchClaimedBooks = () => {

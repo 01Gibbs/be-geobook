@@ -1,5 +1,3 @@
-import { createRequire } from 'module'
-const require = createRequire(import.meta.url)
 const admin = require('firebase-admin')
 const serviceAccount = require('./authkey.json')
 
@@ -25,5 +23,4 @@ async function decodeIDToken (req, res, next) {
   }
   next()
 }
-
-export default decodeIDToken
+module.exports = decodeIDToken

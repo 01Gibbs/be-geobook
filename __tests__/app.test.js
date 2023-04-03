@@ -1,10 +1,8 @@
-import mongoose from 'mongoose'
-import request from 'supertest'
-import app from '../app.js'
-import seedDB from '../db/seeds.js'
-import dotenv from 'dotenv'
-
-dotenv.config({ path: '.env.test' })
+const mongoose = require('mongoose')
+const request = require('supertest')
+const app = require('../app.js')
+const seedDB = require('../db/seeds.js')
+require('dotenv').config({ path: '.env.test' });
 
 beforeAll(async () => {
   await mongoose.connect(process.env.DATABASE_URL)

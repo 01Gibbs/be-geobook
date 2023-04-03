@@ -1,6 +1,6 @@
-import { faker } from "@faker-js/faker";
-import mongoose from 'mongoose'
-import fs from 'fs/promises'
+const { faker } = require('@faker-js/faker')
+const mongoose = require('mongoose')
+const fs = require('fs/promises')
 
 function generateBooks() {
   let books = [];
@@ -34,4 +34,4 @@ function generateBooks() {
 
 }
 
-export default generateBooks();
+module.exports = generateBooks();

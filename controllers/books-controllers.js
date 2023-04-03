@@ -1,6 +1,6 @@
-import bookModels from "../model/book.js";
+const bookModels = require("../model/book.js");
 
-export const getBooks = async (req, res, next) => {
+exports.getBooks = async (req, res, next) => {
   try {
     const bookData = await bookModels.find();
     return res.status(200).send({ books: bookData });
@@ -9,7 +9,7 @@ export const getBooks = async (req, res, next) => {
   }
 };
 
-export const getBook = async (req, res, next) => {
+exports.getBook = async (req, res, next) => {
   try {
     const bookData = await bookModels
       .findById(req.params.id)
@@ -24,7 +24,7 @@ export const getBook = async (req, res, next) => {
   }
 };
 
-export const postBook = async (req, res, next) => {
+exports.postBook = async (req, res, next) => {
   try {
     const newBook = new bookModels({
       title: req.body.title,
@@ -41,7 +41,7 @@ export const postBook = async (req, res, next) => {
   }
 };
 
-export const deleteBook = async (req, res, next) => {
+exports.deleteBook = async (req, res, next) => {
   try {
     const bookData = await bookModels.findByIdAndDelete(req.params.id);
 
